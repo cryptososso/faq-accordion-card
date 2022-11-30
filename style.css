@@ -20,7 +20,7 @@ body{
 .container{
    width: 360px;
    height:auto;
-   margin-top: 150px;
+   margin-top: 130px;
    position: relative;
    background-color: #fff;
    padding: 15px;
@@ -78,7 +78,7 @@ body{
 .accordion .contentBx .label{
    position: relative;
    padding: 10px;
-   font-size: 1.2em;
+   font-size: 1.25em;
    font-weight: 400;
    margin-left: -15px;
    transition: 0.3s ease-out;
@@ -109,6 +109,7 @@ body{
 
 .accordion .contentBx .content{
    position: relative;
+   font-size: 1.1em;
    height: 0;
    overflow: hidden;
    transition: 0.5s;
@@ -132,4 +133,161 @@ body{
 }
 .attribution a { 
    color: hsl(227, 22%, 8%); 
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+body{
+   height: 100vh;
+}
+
+.container{
+   position: relative;
+   width: 800px;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: -5px;
+}
+
+.container .image-box{
+   position: relative;
+   min-height: 450px;
+   background-image: url('./images/bg-pattern-desktop.svg');
+   background-repeat: no-repeat;
+   background-size: 350px;
+   background-position: -10px 80px;
+}
+
+.container .image-box .img-mobile{
+   position: absolute;
+   display: none;
+}
+
+.container .image-box .img-desktop{
+   position: absolute;
+   display: block;
+   width: 400px;
+   top: 10%;
+   right: 50px;
+}
+
+.container .image-box .box-desktop{
+   position: absolute;
+   display: block;
+   width: 150px;
+   top: 160px;
+   left: -100px;
+}
+
+.container .question-box h1{
+   text-align: left;
+   font-size: 3.2em;
+   font-weight: 700;
+   padding: 10px 0;
+   margin: 10px 0 0 10px; 
+}
+
+
+.accordion .contentBx .label{
+  font-size: 1.3em;
+}
+
+.accordion .contentBx .content{
+   font-size: 1.1em;
+}
+
+.accordion .contentBx:last-child{
+   margin-bottom: 40px;
+}
+
+.attribution { 
+   font-size: 18px; 
+   color: #fff;
+}
+
+
+
+
+}
+
+@media screen 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 2600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+body{
+   height: 100vh;
+}
+
+.container{
+   position: relative;
+   width: 800px;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.container .image-box{
+   position: relative;
+   min-height: 450px;
+   background-image: url('./images/bg-pattern-desktop.svg');
+   background-repeat: no-repeat;
+   background-size: 350px;
+   background-position: -10px 80px;
+}
+
+.container .image-box .img-mobile{
+   position: absolute;
+   display: none;
+}
+
+.container .image-box .img-desktop{
+   position: absolute;
+   display: block;
+   width: 400px;
+   top: 10%;
+   right: 50px;
+}
+
+.container .image-box .box-desktop{
+   position: absolute;
+   display: block;
+   width: 150px;
+   top: 160px;
+   left: -100px;
+}
+
+.container .question-box h1{
+   text-align: left;
+   font-size: 3.2em;
+   font-weight: 700;
+   padding: 10px 0;
+   margin: 10px 0 0 10px; 
+}
+
+
+.accordion .contentBx .label{
+  font-size: 1.3em;
+}
+
+.accordion .contentBx .content{
+   font-size: 1.1em;
+}
+
+.accordion .contentBx:last-child{
+   margin-bottom: 40px;
+}
+
+.attribution { 
+   font-size: 18px; 
+   color: #fff;
+}
+
+
+
 }
